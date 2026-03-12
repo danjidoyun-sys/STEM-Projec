@@ -2,19 +2,43 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>This is test</title> <!-- 브라우저 탭에 나타나는 제목 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>зонт | зонтик-1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>This is test page</p> <!-- head에 있던 텍스트를 body로 이동 -->
-    
-    <h1>This is test</h1>
-    <h2>This is test</h2>
-    <p>This is test</p>
-    
-    <ol>
-        <li>This is test</li>
-        <li>this is test</li>
-        <li>this is test</li>
-    </ol>
+    <nav id="navbar">
+        <div class="logo">зонт</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#download">Download</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>зонтик-1</h1>
+            <p>차세대 능동방어 체계</p>
+            <a href="#about" class="btn">상세 제원 확인</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2 class="section-title">About</h2>
+        <p>
+            зонтик-1은 위협체를 무력화하기 위해 설계된 하드킬(Hard-kill) 방어 시스템입니다. 
+            정밀한 레이더 추적 기술과 신속한 대응 탄약을 결합하여 플랫폼의 생존성을 높입니다.
+        </p>
+    </section>
+
+    <section id="download">
+        <h2 class="section-title">Download</h2>
+        <p>시스템 브로셔 및 기술 사양서를 다운로드하십시오.</p>
+        <a href="#" class="btn download-btn">브로셔 다운로드</a>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
