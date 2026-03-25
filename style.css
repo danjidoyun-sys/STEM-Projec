@@ -35,7 +35,7 @@ body, html {
 .logo {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--color-4);
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -47,7 +47,7 @@ body, html {
 }
 
 .nav-links a {
-    color: var(--color-5);
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 600;
@@ -56,7 +56,7 @@ body, html {
 }
 
 .nav-links a:hover {
-    color: var(--color-4);
+    color: #d0d0d0;
 }
 
 .hero {
@@ -64,40 +64,56 @@ body, html {
     display: flex;
     align-items: center;
     padding: 0 10%;
-    background: linear-gradient(135deg, var(--color-1) 30%, var(--color-2) 100%);
-    border-bottom: 15px solid var(--color-3);
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)),
+        url("Screenshot_25-3-2026_193230_www.bing.com.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 15px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero-content {
+    background: rgba(30, 30, 35, 0.78);
+    padding: 3rem;
+    max-width: 650px;
+    border-radius: 4px;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
 .hero-content h1 {
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 700;
-    color: var(--color-5);
+    color: #ffffff;
     margin-bottom: 1rem;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
 }
 
 .hero-content p {
-    font-size: 1.5rem;
-    color: var(--color-4);
-    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    color: #e3e3e3;
+    margin-bottom: 2.5rem;
     font-weight: 400;
+    line-height: 1.6;
 }
 
 .btn {
     display: inline-block;
     padding: 1rem 3rem;
-    background-color: var(--color-4);
-    color: var(--color-1);
+    background-color: #b30000;
+    color: #ffffff;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     font-weight: 700;
     text-transform: uppercase;
     border-radius: 2px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .btn:hover {
-    background-color: var(--color-5);
+    background-color: #d10000;
+    transform: translateY(-2px);
 }
 
 section {
@@ -151,4 +167,43 @@ section {
 .download-btn {
     background-color: var(--color-1);
     color: var(--color-5);
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        padding: 1rem 1.5rem;
+    }
+
+    .logo {
+        font-size: 1.6rem;
+    }
+
+    .nav-links {
+        gap: 1.2rem;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        padding: 0 5%;
+    }
+
+    .hero-content {
+        padding: 2rem;
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 2.4rem;
+    }
 }
