@@ -244,3 +244,9 @@ img {
     border-radius: 6px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.5);
 }
+.btn {
+    background: linear-gradient(90deg, #00ff88, #00cc66);
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
